@@ -2,12 +2,8 @@ from tkinter import *
 from PIL import ImageTk,Image
 from tkinter import messagebox
 import pymysql
-
+import DatabaseConnectivity
 # Add your own database name and password here to reflect in the code
-mypass = "root1234"
-mydatabase = "db"
-con = pymysql.connect(host="localhost",user="root",password=mypass,database=mydatabase)
-cur = con.cursor()
 
 # Enter Table Names here
 issueTable = "books_issued" 
@@ -16,6 +12,10 @@ bookTable = "books"
 #List To store all Book IDs
 allBid = []
 def issue():
+    # Add your own database name and password here to reflect in the code
+    con=DatabaseConnectivity()
+    cur = con.cursor()
+
     global issueBtn, labelFrame, lb1, inf1, inf2, inf4, quitBtn, root, Canvas1, status, studentname, studentnumber, show
 
     bid = inf1.get()

@@ -3,6 +3,7 @@ from PIL import ImageTk,Image
 from tkinter import messagebox
 import pymysql
 from MenuForStudent import *
+import DatabaseConnectivity
 
 def studentLogin():
     global studID
@@ -36,11 +37,11 @@ def login():
     root.title("Library")
     root.minsize(width=1100, height=700)
     root.geometry("600x500")
-
-    con = pymysql.connect(host="localhost",user="root",password="root1234",database="db")
+    # Add your own database name and password here to reflect in the code
+    con=DatabaseConnectivity()
     cur = con.cursor()
 
-    studentTable = "members" 
+    studentTable = "members"
 
     Canvas1 = Canvas(root)
     

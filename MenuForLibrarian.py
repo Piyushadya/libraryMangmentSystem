@@ -7,18 +7,15 @@ from DeleteBook import *
 from ViewBooks import *
 from IssueBook import *
 from ReturnBook import *
+import DatabaseConnectivity
 
 
 def menuForLibrarian():
-
+    global cur
 
     # Add your own database name and password here to reflect in the code
-    mypass = "root1234"
-    mydatabase = "db"
-
-    con = pymysql.connect(host="localhost",user="root",password=mypass,database=mydatabase)
+    con=DatabaseConnectivity()
     cur = con.cursor()
-
 
     root = Tk()
     root.title("Library")

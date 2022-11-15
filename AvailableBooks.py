@@ -1,17 +1,15 @@
 from tkinter import *
 from PIL import ImageTk,Image
 from tkinter import messagebox
-import pymysql
 
-# Add your own database name and password here to reflect in the code
-mypass = "root1234"
-mydatabase = "db"
+import DatabaseConnectivity
 
-con = pymysql.connect(host="localhost",user="root",password=mypass,database=mydatabase)
-cur = con.cursor()
+
 
 def AvailableBooks():
-
+    # Add your own database name and password here to reflect in the code
+    con=DatabaseConnectivity()
+    cur = con.cursor()
     root = Tk()
     root.title("Library")
     root.minsize(width=1100, height=700)

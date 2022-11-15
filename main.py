@@ -1,19 +1,15 @@
-
-from MenuForLibrarian import *
 from tkinter import *
 from PIL import ImageTk,Image
 import pymysql
 from tkinter import messagebox
 from LibLogin import *
 from StuLogin import *
-from MenuForStudent import *
+from DatabaseConnectivity import *
 
+print(DatabaseConnectivity())
 def main():
     global cur
-    mypass = "root1234"
-    mydatabase = "db"
-
-    con = pymysql.connect(host="localhost", user="root", password=mypass, database=mydatabase)
+    con=DatabaseConnectivity()
     cur = con.cursor()
 
     root = Tk()

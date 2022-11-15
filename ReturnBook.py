@@ -1,14 +1,14 @@
 from tkinter import *
 from PIL import ImageTk,Image
 from tkinter import messagebox
-import pymysql
+
+import DatabaseConnectivity
 
 # Add your own database name and password here to reflect in the code
-mypass = "root1234"
-mydatabase = "db"
-
-con = pymysql.connect(host="localhost",user="root",password=mypass,database=mydatabase)
+# Add your own database name and password here to reflect in the code
+con=DatabaseConnectivity()
 cur = con.cursor()
+
 
 # Enter Table Names here
 issueTable = "books_issued" #Issue Table
