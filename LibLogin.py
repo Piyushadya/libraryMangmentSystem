@@ -3,7 +3,7 @@ from PIL import ImageTk,Image
 from tkinter import messagebox
 import pymysql
 from MenuForLibrarian import *
-import DatabaseConnectivity
+from DatabaseConnectivity import *
 
 def librarianLogin():
     memId = loginInfo1.get()

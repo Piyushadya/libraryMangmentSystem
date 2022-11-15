@@ -3,7 +3,7 @@ from PIL import ImageTk,Image
 from tkinter import messagebox
 import pymysql
 from MenuForStudent import *
-import DatabaseConnectivity
+from DatabaseConnectivity import *
 
 def studentLogin():
     global studID

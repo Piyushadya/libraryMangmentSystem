@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 import pymysql
 from PIL import ImageTk,Image
-import DatabaseConnectivity
+from DatabaseConnectivity import *
 def bookRegister():
     
     bid = bookInfo1.get()

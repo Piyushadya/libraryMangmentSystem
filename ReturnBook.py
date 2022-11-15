@@ -2,7 +2,7 @@ from tkinter import *
 from PIL import ImageTk,Image
 from tkinter import messagebox
 
-import DatabaseConnectivity
+from DatabaseConnectivity import *
 
 # Add your own database name and password here to reflect in the code
 # Add your own database name and password here to reflect in the code
