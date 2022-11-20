@@ -15,10 +15,10 @@ def issue():
     con=DatabaseConnectivity()
     cur = con.cursor()
 
-    global issueBtn, labelFrame, lb1, inf1, inf2, inf4, quitBtn, root, Canvas1, status, studentname, studentnumber, show
+    global issueBtn, labelFrame, lb1, inf1, inf2, inf4, quitBtn, root, Canvas1, status, studentname, mem_id, show
 
     bid = inf1.get()
-    studentnumber = inf2.get()
+    mem_id = inf2.get()
     studentname=inf4.get()
 
     issueBtn.destroy()
@@ -53,7 +53,7 @@ def issue():
     except:
         messagebox.showinfo("Error","Can't fetch Book IDs")
     
-    issueSql = "insert into "+issueTable+" values ('"+bid+"','"+studentnumber+"','"+studentname+"')"
+    issueSql = "insert into "+issueTable+" values ('"+bid+"','"+mem_id+"','"+studentname+"')"
     show = "select * from "+issueTable
 
     updateStatus = "update "+bookTable+" set status = 'issued' where bid = '"+bid+"'"
@@ -64,9 +64,6 @@ def issue():
             cur.execute(updateStatus)
             con.commit()
             messagebox.showinfo('Success',"Book Issued Successfully")
-            print(bid)
-            print(studentname)
-            print(studentnumber)
             root.destroy()
         else:
             allBid.clear()
@@ -108,8 +105,8 @@ def issueBook():
     inf1 = Entry(labelFrame)
     inf1.place(relx=0.3,rely=0.2, relwidth=0.62)
     
-    # Issued To Student number
-    lb2 = Label(labelFrame,text="Student ID : ", bg='black', fg='white',font=('Courier', 15))
+    # Issued To Member id
+    lb2 = Label(labelFrame,text="Member ID : ", bg='black', fg='white',font=('Courier', 15))
     lb2.place(relx=0.05,rely=0.4)
         
     inf2 = Entry(labelFrame)

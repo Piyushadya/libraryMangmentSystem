@@ -36,14 +36,14 @@ def ViewIssued(id):
     labelFrame.place(relx=0,rely=0.3,relwidth=1,relheight=0.5)
     y = 0.25
     
-    Label(labelFrame, text="%-10s%-20s%-20s%-20s"%('BID','Title','Author','Status'),bg='black',fg='white',font=('Courier', 20)).place(relx=0.01,rely=0.1)
+    Label(labelFrame, text="%-10s%-20s%-20s"%('BID','Title','Author'),bg='black',fg='white',font=('Courier', 20)).place(relx=0.01,rely=0.1)
     Label(labelFrame, text="----------------------------------------------------------------------------------------------------------------------",bg='black',fg='white',font=('Courier', 20)).place(relx=0,rely=0.2)
-    getBooks = 'SELECT * FROM books as b left join books_issued as i on i.bid =b.bid where i.studentnumber="'+id+'"'
+    getBooks = 'SELECT * FROM books as b left join books_issued as i on i.bid =b.bid where i.mem_id="'+id+'"'
     try:
         cur.execute(getBooks)
         con.commit()
         for i in cur:
-            Label(labelFrame, text="%-10s%-20s%-20s%-20s"%(i[0],i[1],i[2],i[3]),bg='black',fg='white',font=('Courier', 20)).place(relx=0.01,rely=y)
+            Label(labelFrame, text="%-10s%-20s%-20s"%(i[0],i[1],i[2]),bg='black',fg='white',font=('Courier', 20)).place(relx=0.01,rely=y)
             y += 0.1
     except:
         messagebox.showinfo("Failed to fetch files from database")

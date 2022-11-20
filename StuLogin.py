@@ -58,7 +58,7 @@ def login():
     labelFrame = Frame(root,bg='black')
     labelFrame.place(relx=0.1,rely=0.4,relwidth=0.8,relheight=0.4)
         
-    # student ID
+    # Member ID
     lb1 = Label(labelFrame,text="Member ID : ", bg='black', fg='white',font=('Courier', 15))
     lb1.place(relx=0.05,rely=0.05, relheight=0.08)
   
@@ -131,10 +131,9 @@ def addStudent():
     root.title("Library")
     root.minsize(width=400,height=400)
     root.geometry("600x500")
-
-    con = pymysql.connect(host="localhost",user="root",password="root1234",database="db")
+    
+    con=DatabaseConnectivity()
     cur = con.cursor()
-
     # Enter Table Names here
     studentTable = "members" # Book Table
 

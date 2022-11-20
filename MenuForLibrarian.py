@@ -7,7 +7,7 @@ from DeleteBook import *
 from ViewBooks import *
 from IssueBook import *
 from ReturnBook import *
-import DatabaseConnectivity
+from DatabaseConnectivity import *
 
 
 def menuForLibrarian():

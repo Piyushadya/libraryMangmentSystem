@@ -18,12 +18,6 @@ def bookRegister():
         messagebox.showinfo('Success',"Book added successfully")
     except:
         messagebox.showinfo("Error","Can't add data into Database")
-    
-    print(bid)
-    print(title)
-    print(author)
-    print(status)
-
 
     root.destroy()
     
