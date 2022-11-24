@@ -70,7 +70,7 @@ def loginLibrarian():
     lb3 = Label(labelFrame,text="Password : ", bg='black', fg='white',font=('Courier', 15))
     lb3.place(relx=0.05,rely=0.35, relheight=0.08)
         
-    loginInfo3 = Entry(labelFrame)
+    loginInfo3 = Entry(labelFrame, show = "*")
     loginInfo3.place(relx=0.3,rely=0.35, relwidth=0.62, relheight=0.08)
     
             

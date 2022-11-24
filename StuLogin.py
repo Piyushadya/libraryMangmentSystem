@@ -1,4 +1,4 @@
-from tkinter import *
+ tkinter import *
 from PIL import ImageTk,Image
 from tkinter import messagebox
 import pymysql
@@ -74,7 +74,7 @@ def login():
     lb3 = Label(labelFrame,text="Password : ", bg='black', fg='white',font=('Courier', 15))
     lb3.place(relx=0.05,rely=0.35, relheight=0.08)
         
-    loginInfo3 = Entry(labelFrame)
+    loginInfo3 = Entry(labelFrame, show = "*")
     loginInfo3.place(relx=0.3,rely=0.35, relwidth=0.62, relheight=0.08)
 
     #Submit Button
@@ -167,7 +167,7 @@ def addStudent():
     lb3 = Label(labelFrame,text="Password : ", bg='black', fg='white',font=('Courier', 15))
     lb3.place(relx=0.05,rely=0.35, relheight=0.08)
         
-    studentInfo3 = Entry(labelFrame)
+    studentInfo3 = Entry(labelFrame, show = "*")
     studentInfo3.place(relx=0.3,rely=0.35, relwidth=0.62, relheight=0.08)
         
     lb4 = Label(labelFrame,text="Firstname : ", bg='black', fg='white',font=('Courier', 15))
