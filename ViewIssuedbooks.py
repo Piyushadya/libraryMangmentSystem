@@ -6,14 +6,15 @@ from tkinter import messagebox
 from DatabaseConnectivity import *
 
 
+# It will fetch data from database and show details of books issued to particular user
 def ViewIssued(id):
     global bookTable
 
-    # Add your own database name and password here to reflect in the code
+    # It will provide database connectivity
     con=DatabaseConnectivity()
     cur = con.cursor()
 
-    # Enter Table Names here
+    # Table name is mentioned here
     bookTable = "books"
     root = Tk()
     root.title("Library")
@@ -28,7 +29,8 @@ def ViewIssued(id):
         
     headingFrame1 = Frame(root)
     headingFrame1.place(relx=0.25,rely=0.1,relwidth=0.5,relheight=0.13)
-        
+      
+    # Heading of the form 
     headingLabel = Label(headingFrame1, text="View Issued Books", bg='black', fg='white', font=('Courier',20))
     headingLabel.place(relx=0,rely=0, relwidth=1, relheight=1)
     
@@ -36,6 +38,7 @@ def ViewIssued(id):
     labelFrame.place(relx=0,rely=0.3,relwidth=1,relheight=0.5)
     y = 0.25
     
+    # Fields are displayed in the current window as mentioned below and data are displayed accordingly in each field
     Label(labelFrame, text="%-10s%-20s%-20s"%('BID','Title','Author'),bg='black',fg='white',font=('Courier', 20)).place(relx=0.01,rely=0.1)
     Label(labelFrame, text="----------------------------------------------------------------------------------------------------------------------",bg='black',fg='white',font=('Courier', 20)).place(relx=0,rely=0.2)
     getBooks = 'SELECT * FROM books as b left join books_issued as i on i.bid =b.bid where i.mem_id="'+id+'"'
@@ -48,6 +51,7 @@ def ViewIssued(id):
     except:
         messagebox.showinfo("Failed to fetch files from database")
     
+    # Quit button is added to destroy the current event
     quitBtn = Button(root,text="Quit",bg='#f7f1e3', fg='black', command=root.destroy,font=('Courier', 15))
     quitBtn.place(relx=0.4,rely=0.9, relwidth=0.18,relheight=0.08)
     
