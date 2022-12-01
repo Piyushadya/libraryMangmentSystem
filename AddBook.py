@@ -74,11 +74,19 @@ def addBook():
     bookInfo3.place(relx=0.3,rely=0.50, relwidth=0.62, relheight=0.08)
         
     # Book Status
-    lb4 = Label(labelFrame,text="Status(avail/issued) : ", bg='black', fg='white',font=('Courier', 15))
-    lb4.place(relx=0.02,rely=0.65, relheight=0.08)
-        
-    bookInfo4 = Entry(labelFrame)
-    bookInfo4.place(relx=0.3,rely=0.65, relwidth=0.62, relheight=0.08)
+    lb4 = Label(labelFrame,text="Status : ", bg='black', fg='white',font=('Courier', 15))
+    lb4.place(relx=0.05,rely=0.65, relheight=0.08)
+    options = [
+    "Available",
+    "Issued"
+    ]
+    clicked = StringVar(root)
+    clicked.set( "Available" )
+    drop = OptionMenu( root , clicked , *options )
+    drop.pack()  
+     
+    drop.place(relx=0.34,rely=0.66, relwidth=0.50, relheight=0.03)
+  
         
     #Submit Button
     SubmitBtn = Button(root,text="SUBMIT",bg='#d1ccc0', fg='black',command=bookRegister,font=('Courier', 15))
