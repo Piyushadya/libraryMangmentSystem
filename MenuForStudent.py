@@ -36,12 +36,16 @@ def menuForStudent(memId):
     headingLabel.place(relx=0, rely=0, relwidth=1, relheight=1)
 
     # If clicked, it will display the available books
-    btn1 = Button(root, text="Available Books ", bg='black', fg='white',command=AvailableBooks,font=('Courier', 15))
+    btn1 = Button(root, text="View Available Books ", bg='black', fg='white',command=AvailableBooks,font=('Courier', 15))
     btn1.place(relx=0.28, rely=0.4, relwidth=0.45, relheight=0.1)
 
     # If clicked, it will display the books issued to particular user
     btn2 = Button(root, text="View Issued Books ", bg='black', fg='white',command=lambda: ViewIssued(memId),font=('Courier', 15))
     btn2.place(relx=0.28, rely=0.5, relwidth=0.45, relheight=0.1)
+
+    # Quit button to destroy the current event
+    btn3 = Button(root,text="Quit",bg='black', fg='white', command=root.destroy,font=('Courier', 15))
+    btn3.place(relx=0.28,rely=0.6, relwidth=0.45,relheight=0.1)
 
 
     root.mainloop()

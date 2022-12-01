@@ -20,8 +20,9 @@ def studentLogin():
         cur.execute("SELECT * FROM "+studentTable+" WHERE mem_id = '"+memId+"' and username = '"+username+"' and password = '"+password+"'")
         if cur.fetchone() is not None:
             messagebox.showinfo('success',"You Successfully Login")
-            menuForStudent(memId)
             root.destroy()
+            menuForStudent(memId)
+            
 
         else:
             messagebox.showinfo("Error","Invalid Username or password")
@@ -55,7 +56,7 @@ def login():
     headingFrame1.place(relx=0.25,rely=0.1,relwidth=0.5,relheight=0.13)
 
     # Heading of Login form
-    headingLabel = Label(headingFrame1, text="Login", bg='black', fg='white', font=('Courier',20))
+    headingLabel = Label(headingFrame1, text="Login For Student", bg='black', fg='white', font=('Courier',20))
     headingLabel.place(relx=0,rely=0, relwidth=1, relheight=1)
 
 

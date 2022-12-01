@@ -15,8 +15,8 @@ def librarianLogin():
     else:
       if memId=="0" and username=="admin" and password == "admin"  :
           messagebox.showinfo('success',"You Successfully Login")
-          menuForLibrarian()
           root.destroy()
+          menuForLibrarian()
       else:
             messagebox.showinfo("Error","Invalid Credentials")
     cur.close()
