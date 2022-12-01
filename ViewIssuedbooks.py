@@ -1,4 +1,3 @@
-
 from StuLogin import *
 from tkinter import *
 from PIL import ImageTk,Image
@@ -35,7 +34,7 @@ def ViewIssued(id):
     headingLabel.place(relx=0,rely=0, relwidth=1, relheight=1)
     
     labelFrame = Frame(root,bg='black')
-    labelFrame.place(relx=0,rely=0.3,relwidth=1,relheight=0.5)
+    labelFrame.place(relx=0.1,rely=0.3,relwidth=0.8,relheight=0.5)
     y = 0.25
     
     # Fields are displayed in the current window as mentioned below and data are displayed accordingly in each field

@@ -28,7 +28,7 @@ def AvailableBooks():
     headingLabel.place(relx=0,rely=0, relwidth=1, relheight=1)
     
     labelFrame = Frame(root,bg='black')
-    labelFrame.place(relx=0,rely=0.3,relwidth=1,relheight=0.5)
+    labelFrame.place(relx=0.1,rely=0.3,relwidth=0.8,relheight=0.5)
     y = 0.25
     
     # It will provide the column fields of the form where respective data is displayed
