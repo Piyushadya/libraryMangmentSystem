@@ -11,7 +11,7 @@ def bookRegister():
     bid = bookInfo1.get()
     title = bookInfo2.get()
     author = bookInfo3.get()
-    status = bookInfo4.get()
+    status = clicked.get()
     status = status.lower()
     
 #Adding details to the desired table in database
@@ -28,7 +28,7 @@ def bookRegister():
 # we create this "addBook" function to add new book to the inventory.    
 def addBook(): 
     
-    global bookInfo1,bookInfo2,bookInfo3,bookInfo4,Canvas1,con,cur,bookTable,root
+    global bookInfo1,bookInfo2,bookInfo3,clicked,Canvas1,con,cur,bookTable,root
     
     root = Tk()
     root.title("Library")

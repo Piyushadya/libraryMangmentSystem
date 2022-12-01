@@ -137,7 +137,7 @@ def addStudent():
     root = Tk()
     # Frame sizing
     root.title("Library")
-    root.minsize(width=400,height=400)
+    root.minsize(width=1100,height=700)
     root.geometry("600x500")
     
     # Provide connection to the database
@@ -164,7 +164,7 @@ def addStudent():
     labelFrame.place(relx=0.1,rely=0.4,relwidth=0.8,relheight=0.4)
      
     # Field to add member ID
-    lb1 = Label(labelFrame,text="Member ID : ", bg='black', fg='white',font=('Courier', 15))
+    lb1 = Label(labelFrame,text="Student ID : ", bg='black', fg='white',font=('Courier', 15))
     lb1.place(relx=0.05,rely=0.05, relheight=0.08)
   
     studentInfo1 = Entry(labelFrame)
@@ -204,7 +204,7 @@ def addStudent():
     SubmitBtn.place(relx=0.28,rely=0.9, relwidth=0.18,relheight=0.08)
     
     # Quit button to destroy the current event
-    quitBtn = Button(root,text="RETURN",bg='#f7f1e3', fg='black', command=returnback,font=('Courier', 15))
+    quitBtn = Button(root,text="RETURN",bg='#f7f1e3', fg='black', command=root.destroy,font=('Courier', 15))
     quitBtn.place(relx=0.53,rely=0.9, relwidth=0.18,relheight=0.08)
     
     root.mainloop()

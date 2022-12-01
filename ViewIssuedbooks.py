@@ -30,7 +30,7 @@ def ViewIssued(id):
     headingFrame1.place(relx=0.25,rely=0.1,relwidth=0.5,relheight=0.13)
       
     # Heading of the form 
-    headingLabel = Label(headingFrame1, text="View Issued Books", bg='black', fg='white', font=('Courier',20))
+    headingLabel = Label(headingFrame1, text="Issued Books", bg='black', fg='white', font=('Courier',20))
     headingLabel.place(relx=0,rely=0, relwidth=1, relheight=1)
     
     labelFrame = Frame(root,bg='black')

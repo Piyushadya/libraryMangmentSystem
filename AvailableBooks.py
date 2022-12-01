@@ -24,7 +24,7 @@ def AvailableBooks():
     headingFrame1.place(relx=0.25, rely=0.1, relwidth=0.5, relheight=0.13)
     
     #Heading of the current Page
-    headingLabel = Label(headingFrame1, text="Availables Books", bg='black', fg='white', font=('Courier',20))
+    headingLabel = Label(headingFrame1, text="Available Books", bg='black', fg='white', font=('Courier',20))
     headingLabel.place(relx=0,rely=0, relwidth=1, relheight=1)
     
     labelFrame = Frame(root,bg='black')
