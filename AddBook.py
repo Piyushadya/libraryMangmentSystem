@@ -3,13 +3,18 @@ from tkinter import messagebox
 import pymysql
 from PIL import ImageTk,Image
 from DatabaseConnectivity import *
+
+# we create this "bookRegister" function to insert data into database after fetching data from form.
 def bookRegister():
+#fetching book details from form    
     
     bid = bookInfo1.get()
     title = bookInfo2.get()
     author = bookInfo3.get()
     status = bookInfo4.get()
     status = status.lower()
+    
+#Adding details to the desired table in database
     
     insertBooks = "insert into "+bookTable+" values('"+bid+"','"+title+"','"+author+"','"+status+"')"
     try:
@@ -20,7 +25,7 @@ def bookRegister():
         messagebox.showinfo("Error","Can't add data into Database")
 
     root.destroy()
-    
+# we create this "addBook" function to add new book to the inventory.    
 def addBook(): 
     
     global bookInfo1,bookInfo2,bookInfo3,bookInfo4,Canvas1,con,cur,bookTable,root
@@ -30,18 +35,20 @@ def addBook():
     root.minsize(width=1100, height=700)
     root.geometry("600x500")
 
-    # Add your own database name and password here to reflect in the code
+    # It will connect to the database 
     con=DatabaseConnectivity()
     cur = con.cursor()
 
-    # Enter Table Names here
-    bookTable = "books" # Book Table
+    # Table name where new books data are stored
+    bookTable = "books"
 
     Canvas1 = Canvas(root)
     
+    # Background color is provided here
     Canvas1.config(bg="#ff6e40")
     Canvas1.pack(expand=True,fill=BOTH)
-        
+    
+    # Providing heading of the Page
     headingFrame1 = Frame(root)
     headingFrame1.place(relx=0.25,rely=0.1,relwidth=0.5,relheight=0.13)
 
@@ -52,30 +59,32 @@ def addBook():
     labelFrame = Frame(root,bg='black')
     labelFrame.place(relx=0.1,rely=0.4,relwidth=0.8,relheight=0.4)
         
-    # Book ID
+    # ID of the book
     lb1 = Label(labelFrame,text="Book ID : ", bg='black', fg='white',font=('Courier', 15))
     lb1.place(relx=0.05,rely=0.2, relheight=0.08)
         
     bookInfo1 = Entry(labelFrame)
     bookInfo1.place(relx=0.3,rely=0.2, relwidth=0.62, relheight=0.08)
         
-    # Title
+    # Title of the book
     lb2 = Label(labelFrame,text="Title : ", bg='black', fg='white',font=('Courier', 15))
     lb2.place(relx=0.05,rely=0.35, relheight=0.08)
         
     bookInfo2 = Entry(labelFrame)
     bookInfo2.place(relx=0.3,rely=0.35, relwidth=0.62, relheight=0.08)
         
-    # Book Author
+    # Author of the Book
     lb3 = Label(labelFrame,text="Author : ", bg='black', fg='white',font=('Courier', 15))
     lb3.place(relx=0.05,rely=0.50, relheight=0.08)
         
     bookInfo3 = Entry(labelFrame)
     bookInfo3.place(relx=0.3,rely=0.50, relwidth=0.62, relheight=0.08)
         
-    # Book Status
+    # Status of the book in the form of dropdown
     lb4 = Label(labelFrame,text="Status : ", bg='black', fg='white',font=('Courier', 15))
     lb4.place(relx=0.05,rely=0.65, relheight=0.08)
+    
+    #Dropdown is added here, providing two options: Available/Issued
     options = [
     "Available",
     "Issued"
@@ -88,9 +97,11 @@ def addBook():
     drop.place(relx=0.34,rely=0.66, relwidth=0.50, relheight=0.03)
   
         
-    #Submit Button
+    #Creating a submit button that will insert the data to database by triggering bookRegister function
     SubmitBtn = Button(root,text="SUBMIT",bg='#d1ccc0', fg='black',command=bookRegister,font=('Courier', 15))
     SubmitBtn.place(relx=0.28,rely=0.9, relwidth=0.18,relheight=0.08)
+  
+    #Creating a quit button that will destroy the event
     
     quitBtn = Button(root,text="Quit",bg='#f7f1e3', fg='black', command=root.destroy,font=('Courier', 15))
     quitBtn.place(relx=0.53,rely=0.9, relwidth=0.18,relheight=0.08)
