@@ -18,7 +18,7 @@ def librarianLogin():
           menuForLibrarian()
           root.destroy()
       else:
-            messagebox.showinfo("Error","Invalid Username or password")
+            messagebox.showinfo("Error","Invalid Credentials")
     cur.close()
     con.close()
 
