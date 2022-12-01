@@ -2,8 +2,8 @@ from tkinter import *
 from PIL import ImageTk, Image
 import pymysql
 from tkinter import messagebox
-from AddBook import *
-from DeleteBook import *
+from AddBookInfo import *
+from DeleteBookInfo import *
 from ViewBooks import *
 from IssueBook import *
 from ReturnBook import *
@@ -37,7 +37,7 @@ def menuForLibrarian():
     headingLabel.place(relx=0, rely=0, relwidth=1, relheight=1)
 
     # To add book
-    btn1 = Button(root, text="Add Book Details", bg='black', fg='white', command=addBook,font=('Courier', 15))
+    btn1 = Button(root, text="Add Book Details", bg='black', fg='white', command=addBookInfo,font=('Courier', 15))
     btn1.place(relx=0.28, rely=0.3, relwidth=0.45, relheight=0.1)
 
     # To delete book
