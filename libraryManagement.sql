@@ -39,7 +39,7 @@ CREATE TABLE `books` (
 
 LOCK TABLES `books` WRITE;
 /*!40000 ALTER TABLE `books` DISABLE KEYS */;
-INSERT INTO `books` VALUES ('1','math','rd','avail'),('2','science','caswd','issued');
+INSERT INTO `books` VALUES ('1','Title1','Author1','issued'),('2','Title2','Author2','available');
 /*!40000 ALTER TABLE `books` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -65,7 +65,7 @@ CREATE TABLE `books_issued` (
 
 LOCK TABLES `books_issued` WRITE;
 /*!40000 ALTER TABLE `books_issued` DISABLE KEYS */;
-INSERT INTO `books_issued` VALUES ('2',12,'Piyush');
+INSERT INTO `books_issued` VALUES ('1',12,'Piyush');
 /*!40000 ALTER TABLE `books_issued` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -92,7 +92,7 @@ CREATE TABLE `members` (
 
 LOCK TABLES `members` WRITE;
 /*!40000 ALTER TABLE `members` DISABLE KEYS */;
-INSERT INTO `members` VALUES (12,'Piyush13','12345','Piyush','Adya');
+INSERT INTO `members` VALUES (12,'Piyush','12345','Piyush','Adya');
 /*!40000 ALTER TABLE `members` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -105,4 +105,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-11-20 11:49:08
+-- Dump completed on 2022-12-01 21:05:22
