@@ -53,10 +53,13 @@ Then follow below steps:
   6. Click Start Import button at the right bottom corner of window
 
 NOTE: The Desktop Application has been deployed as an executable file. There are two separate executable files for Windows OS and Mac OS. Please find the links below.
+
 Executable File for Windows OS:
+
 [https://github.com/Piyushadya/libraryMangmentSystem/blob/master/dist/main.exe]
 
 Executable File for Mac OS:
+
 [https://github.com/Piyushadya/libraryMangmentSystem/blob/master/dist/main]
 
 We developed a Library Management System written in Python, tkinter and MySQL
@@ -79,7 +82,8 @@ As shown below, it has two buttons:
   [https://github.com/Piyushadya/libraryMangmentSystem/blob/master/Images/Home.png]
 
 
-For Librarian Login, please add below credentials: https://github.com/Piyushadya/libraryMangmentSystem/blob/master/Images/Librarian_Login.png
+For Librarian Login, please add below credentials: 
+[https://github.com/Piyushadya/libraryMangmentSystem/blob/master/Images/Librarian_Login.png]
 
   Member ID : 
   ```
@@ -95,7 +99,8 @@ admin
   ````
 
 
-For Student Login, please add below credentials: https://github.com/Piyushadya/libraryMangmentSystem/blob/master/Images/Login_Student.png
+For Student Login, please add below credentials: 
+[https://github.com/Piyushadya/libraryMangmentSystem/blob/master/Images/Login_Student.png]
 
   Member ID :
    ```` 
@@ -116,8 +121,9 @@ For Student Login, please add below credentials: https://github.com/Piyushadya/l
 
 
 
-After successfull Library Login, the LMS system will display the below features:
+After successful Library Login, the LMS system will display the below features:
 [https://github.com/Piyushadya/libraryMangmentSystem/blob/master/Images/Menu_for_Librarian.png]
+
   1. Add book details
   2. Delete book
   3. View book list
@@ -142,7 +148,7 @@ After clicking "Return book", it will display below form, where you can add belo
 
 After clicking Quit, it will destroy the current event
 
-After successfull Student Login, the LMS system will display the below features:
+After successful Student Login, the LMS system will display the below features:
 [https://github.com/Piyushadya/libraryMangmentSystem/blob/master/Images/Menu_For_Student.png]
 
   1. View available books
