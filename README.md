@@ -48,8 +48,9 @@ Then follow below steps:
   1. click on "Server".
   2. Click on "Data import"
   3. Select Import from Self-Contained File radio button (right side of screen)
-  4. Select the path of libraryManagement.sql
-  5. Click Start Import button at the right bottom corner of window
+  4. Select the path of libraryManagement.sql from our project folder
+  5. select the database ("library") from "Default Target Schema:" dropbox
+  6. Click Start Import button at the right bottom corner of window
 
 We developed a Library Management System written in Python, tkinter and MySQL
 
@@ -62,7 +63,7 @@ We developed a Library Management System written in Python, tkinter and MySQL
 3. MySQL : is one of the most common open source databases for storing Python web applications' data.
 
 
-  Home Page of Application:
+  Home Page of Application: 
 
 As shown below, it has two buttons:
   1. Librarian Login
