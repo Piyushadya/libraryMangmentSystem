@@ -45,7 +45,7 @@ def addBookInfo():
     Canvas1 = Canvas(root)
     
     # Background color is provided here
-    Canvas1.config(bg="#ff6e40")
+    Canvas1.config(bg="#5C9EAD")
     Canvas1.pack(expand=True,fill=BOTH)
     
     # Providing heading of the Page

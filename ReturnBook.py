@@ -98,7 +98,7 @@ def returnBook():
     Canvas1 = Canvas(root)
     
     #Background color
-    Canvas1.config(bg="#006B38")
+    Canvas1.config(bg="#333745")
     Canvas1.pack(expand=True,fill=BOTH)
         
     headingFrame1 = Frame(root)

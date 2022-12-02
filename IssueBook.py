@@ -94,7 +94,7 @@ def issueBook():
     
     Canvas1 = Canvas(root)
     # Background color
-    Canvas1.config(bg="#D6ED17")
+    Canvas1.config(bg="#4381C1")
     Canvas1.pack(expand=True,fill=BOTH)
 
     headingFrame1 = Frame(root)

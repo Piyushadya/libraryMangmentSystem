@@ -24,7 +24,7 @@ def menuForStudent(memId):
     Canvas1 = Canvas(root)
 
     #Background color
-    Canvas1.config(bg="#ADD8E6")
+    Canvas1.config(bg="#ADBDFF")
     Canvas1.pack(expand=True, fill=BOTH)
 
     headingFrame1 = Frame(root)

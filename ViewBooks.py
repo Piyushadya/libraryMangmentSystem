@@ -23,7 +23,7 @@ def View():
     root.geometry("600x500")
 
     Canvas1 = Canvas(root)
-    Canvas1.config(bg="#12a4d9")
+    Canvas1.config(bg="#75B9BE")
     Canvas1.pack(expand=True, fill=BOTH)
 
     headingFrame1 = Frame(root)

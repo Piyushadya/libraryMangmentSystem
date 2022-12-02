@@ -49,7 +49,7 @@ def login():
     Canvas1 = Canvas(root)
     
     #Background color
-    Canvas1.config(bg="#ff6e40")
+    Canvas1.config(bg="#995FA3")
     Canvas1.pack(expand=True,fill=BOTH)
         
     headingFrame1 = Frame(root)
@@ -87,7 +87,7 @@ def login():
 
     # Submit button to add details of user to database
     SubmitBtn = Entry(labelFrame)
-    SubmitBtn = Button(root,text="SUBMIT",bg='#d1ccc0', fg='black',command=studentLogin,font=('Courier', 15))
+    SubmitBtn = Button(root,text="SUBMIT",bg='#f7f1e3', fg='black',command=studentLogin,font=('Courier', 15))
     SubmitBtn.place(relx=0.3,rely=0.7, relwidth=0.18,relheight=0.08)
     
     # To destroy the current event
@@ -150,7 +150,7 @@ def addStudent():
     Canvas1 = Canvas(root)
     
     #Background color
-    Canvas1.config(bg="#ff6e40")
+    Canvas1.config(bg="#564D80")
     Canvas1.pack(expand=True,fill=BOTH)
         
     headingFrame1 = Frame(root)

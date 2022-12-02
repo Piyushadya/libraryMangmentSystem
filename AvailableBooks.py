@@ -17,7 +17,7 @@ def AvailableBooks():
 
     Canvas1 = Canvas(root)
     # Adding Background color
-    Canvas1.config(bg="#FFC0CB")
+    Canvas1.config(bg="#456990")
     Canvas1.pack(expand=True, fill=BOTH)
 
     headingFrame1 = Frame(root)

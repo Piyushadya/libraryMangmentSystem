@@ -25,7 +25,7 @@ def menuForLibrarian():
     Canvas1 = Canvas(root)
 
     # Background color
-    Canvas1.config(bg="#00FFFF")
+    Canvas1.config(bg="#096B72")
     Canvas1.pack(expand=True, fill=BOTH)
 
     headingFrame1 = Frame(root)

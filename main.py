@@ -5,6 +5,7 @@ from tkinter import messagebox
 from LibLogin import *
 from StuLogin import *
 from DatabaseConnectivity import *
+
 # We created this "main" funtion that will view to users as the first page when they run this application 
 def main():
     global cur

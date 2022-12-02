@@ -64,7 +64,7 @@ def delete():
     
     Canvas1 = Canvas(root)
     
-    Canvas1.config(bg="#006B38")
+    Canvas1.config(bg="#75B9BE")
     Canvas1.pack(expand=True,fill=BOTH)
         
     headingFrame1 = Frame(root)

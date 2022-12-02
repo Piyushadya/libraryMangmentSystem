@@ -41,7 +41,7 @@ def loginLibrarian():
     Canvas1 = Canvas(root)
 
     #Background color
-    Canvas1.config(bg="#ff6e40")
+    Canvas1.config(bg="#00487C")
     Canvas1.pack(expand=True,fill=BOTH)
         
     headingFrame1 = Frame(root)
@@ -79,7 +79,7 @@ def loginLibrarian():
             
         
     # submit button will trigger LibrarianLogin function, where credentials are checked
-    SubmitBtn = Button(root,text="SUBMIT",bg='#d1ccc0', fg='black',command=librarianLogin,font=('Courier', 15))
+    SubmitBtn = Button(root,text="SUBMIT",bg='#f7f1e3', fg='black',command=librarianLogin,font=('Courier', 15))
     SubmitBtn.place(relx=0.23,rely=0.9, relwidth=0.18,relheight=0.08)
     
     # Return button is added and will return user to the main window of the application

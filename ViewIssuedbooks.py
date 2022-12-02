@@ -22,7 +22,7 @@ def ViewIssued(id):
 
 
     Canvas1 = Canvas(root) 
-    Canvas1.config(bg="#12a4d9")
+    Canvas1.config(bg="#D7C0D0")
     Canvas1.pack(expand=True,fill=BOTH)
         
         
