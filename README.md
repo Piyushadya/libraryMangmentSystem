@@ -12,13 +12,14 @@ python --version
 Inside a terminal:
 
 tkinter – Please run below command to install tkinter
-  1. pip install tk
-
+```` pip install tk
+````
 pillow – Please run below command to install tkinter
-  1. pip install pillow
-  
+````pip install pillow
+  ````
 pymysql – Please run below command to install tkinter
-  1. python -m pip install PyMySQL  or pip install pymysql
+````python -m pip install PyMySQL  or pip install pymysql
+````
 
 
 ## 2. Please make sure to have MySQL Workbench installed : https://dev.mysql.com/downloads/workbench/
