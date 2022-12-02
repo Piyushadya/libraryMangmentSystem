@@ -34,7 +34,7 @@ def View():
     headingLabel.place(relx=0, rely=0, relwidth=1, relheight=1)
 
     labelFrame = Frame(root, bg='black')
-    labelFrame.place(relx=0.1, rely=0.3, relwidth=0.8, relheight=0.5)
+    labelFrame.place(relx=0, rely=0.3, relwidth=1, relheight=0.5)
     y = 0.25
 
     # It will display all fields as column in particular page and show the fetched values accordingly in the respective fields
