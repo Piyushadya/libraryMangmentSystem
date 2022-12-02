@@ -56,11 +56,19 @@ As shown below, it has two buttons:
 
 
 For Librarian Login, please add below credentials:
-```
-  Member ID : 0
-  Username : admin
-  Password : admin
- ````
+  Member ID : 
+  ```
+  0 
+  ````
+  Username :
+   ```
+admin
+  ````
+  Password : 
+   ```
+admin
+  ````
+
 
 For Student Login, please add below credentials:
 ```
