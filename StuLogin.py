@@ -19,11 +19,9 @@ def studentLogin():
     else:
         cur.execute("SELECT * FROM "+studentTable+" WHERE mem_id = '"+memId+"' and username = '"+username+"' and password = '"+password+"'")
         if cur.fetchone() is not None:
-            messagebox.showinfo('success',"You Successfully Login")
             root.destroy()
+            messagebox.showinfo('success',"You Successfully Login")
             menuForStudent(memId)
-            
-
         else:
             messagebox.showinfo("Error","Invalid Username or password")
     cur.close()
@@ -93,6 +91,7 @@ def login():
     # To destroy the current event
     quitBtn = Entry(labelFrame)
     quitBtn = Button(root,text="RETURN",bg='#f7f1e3', fg='black', command=root.destroy,font=('Courier', 15))
+    
     quitBtn.place(relx=0.6,rely=0.7, relwidth=0.18,relheight=0.08)
     
          
@@ -126,11 +125,6 @@ def studentRegister():
             
             messagebox.showinfo('Success',"student added successfully")
             root.destroy()
-
-
-def returnback():
-    root.destroy()
-    studentLogin()
 
 # Form where user can add their details to register themself in LMS
 def addStudent():

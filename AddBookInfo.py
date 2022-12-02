@@ -86,8 +86,7 @@ def addBookInfo():
     
     #Dropdown is added here, providing two options: Available/Issued
     options = [
-    "Available",
-    "Issued"
+    "Available"
     ]
     clicked = StringVar(root)
     clicked.set( "Available" )
