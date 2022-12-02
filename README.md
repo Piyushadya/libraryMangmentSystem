@@ -12,13 +12,13 @@ python --version
 Inside a terminal:
 
 tkinter – Please run below command to install tkinter
-```` pip install tk
+``` pip install tk
 ````
 pillow – Please run below command to install tkinter
-````pip install pillow
+```pip install pillow
   ````
 pymysql – Please run below command to install tkinter
-````python -m pip install PyMySQL  or pip install pymysql
+```python -m pip install PyMySQL  or pip install pymysql
 ````
 
 
