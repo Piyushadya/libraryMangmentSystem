@@ -72,7 +72,7 @@ As shown below, it has two buttons:
   [https://github.com/Piyushadya/libraryMangmentSystem/blob/master/Images/Home.png]
 
 
-For Librarian Login, please add below credentials:
+For Librarian Login, please add below credentials: https://github.com/Piyushadya/libraryMangmentSystem/blob/master/Images/Librarian_Login.png
 
   Member ID : 
   ```
@@ -88,7 +88,7 @@ admin
   ````
 
 
-For Student Login, please add below credentials:
+For Student Login, please add below credentials: https://github.com/Piyushadya/libraryMangmentSystem/blob/master/Images/Login_Student.png
   Member ID :
    ```` 
    12 
@@ -104,7 +104,7 @@ For Student Login, please add below credentials:
   
   
  If New Student, please Register it in below page after clicking "New User/ Register" Button:
-
+ https://github.com/Piyushadya/libraryMangmentSystem/blob/master/Images/Register_New_Student.png
 
 
 
@@ -117,17 +117,32 @@ After successfull Library Login, the LMS system will display the below features:
   6. Quit
 
 After clicking "Add book details", below form will open, where you can add information accordingly.
+https://github.com/Piyushadya/libraryMangmentSystem/blob/master/Images/Add_Book_Details.png
+
 After clicking "Delete book", below form will open, where you can add "Book ID" to be deleted.
+https://github.com/Piyushadya/libraryMangmentSystem/blob/master/Images/Delete_Book_Details.png
+
 After clicking "View book list", it will display all the books stored in the inventory.
+https://github.com/Piyushadya/libraryMangmentSystem/blob/master/Images/View_Books_List.png
+
 After clicking "Issue book to student", it will display below form, where you can add information of student to whom you want to issue book
+https://github.com/Piyushadya/libraryMangmentSystem/blob/master/Images/Issue_Book_To_Student.png
+
 After clicking "Return book", it will display below form, where you can add below information
+https://github.com/Piyushadya/libraryMangmentSystem/blob/master/Images/Return_Book.png
+
 After clicking Quit, it will destroy the current event
 
 After successfull Student Login, the LMS system will display the below features:
+https://github.com/Piyushadya/libraryMangmentSystem/blob/master/Images/Menu_For_Student.png
+
   1. View available books
   2. View issued books
 
 After clicking "View available books", it will display all the books stored in the inventory whose status is "Available"
+https://github.com/Piyushadya/libraryMangmentSystem/blob/master/Images/View_Available_Books_Student.png
+
 After clicking "View issued books", it will display all the books stored in the inventory whose status is "Issued"
+https://github.com/Piyushadya/libraryMangmentSystem/blob/master/Images/View_Issued_Books_Student.png
 
 
