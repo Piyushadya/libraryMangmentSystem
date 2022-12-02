@@ -43,6 +43,14 @@ Also, after successfully installing the Workbench, to create the instance, pleas
   
 Please note: Please provide above credentials while creating instance of Database as our executable contains the same credentials 
 
+After successfully creating instance, Please create database with Name = "library".
+Then follow below steps:
+  1. click on "Server".
+  2. Click on "Data import"
+  3. Select Import from Self-Contained File radio button (right side of screen)
+  4. Select the path of libraryManagement.sql
+  5. Click Start Import button at the right bottom corner of window
+
 We developed a Library Management System written in Python, tkinter and MySQL
 
 1. Python : is an interpreted, high-level, general-purpose programming language.
