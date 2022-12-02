@@ -4,6 +4,9 @@
 
 Python (must be above v3): https://www.python.org/downloads/
 
+Install any  python IDE such as Pycharm from : https://www.jetbrains.com/pycharm/download/#section=mac  
+or VS Code from :https://code.visualstudio.com/Download
+
 To check your Python version, run:
 ```
 python --version
@@ -25,12 +28,18 @@ python -m pip install PyMySQL  or pip install pymysql
 ````
 
 
-## 2. Please make sure to have MySQL Workbench installed : https://dev.mysql.com/downloads/workbench/
+# 2. Please make sure to have MySQL Workbench installed : https://dev.mysql.com/downloads/workbench/
 
 Also, after successfully installing the Workbench, to create the instance, please provide below credentials:
 
-  Username = root
-  Password = root1234
+ Username :
+  ```` 
+  root
+   ```` 
+ Password :
+  ```` 
+  root1234
+  ````
   
 Please note: Please provide above credentials while creating instance of Database as our executable contains the same credentials 
 
@@ -53,18 +62,34 @@ As shown below, it has two buttons:
 
 
 For Librarian Login, please add below credentials:
-```
-  Member ID : 0
-  Username : admin
-  Password : admin
- ````
+
+  Member ID : 
+  ```
+  0 
+  ````
+  Username :
+   ```
+admin
+  ````
+  Password : 
+   ```
+admin
+  ````
+
 
 For Student Login, please add below credentials:
-```
-  Member ID : 12
-  Username : Piyush
-  Password : 12345
-  ````
+  Member ID :
+   ```` 
+   12 
+   ```` 
+  Username :
+   ```` 
+  Piyush
+   ```` 
+  Password :
+   ```` 
+  12345
+   ```` 
   
   
  If New Student, please Register it in below page after clicking "New User/ Register" Button:
