@@ -4,6 +4,8 @@
 
 Python (must be above v3): https://www.python.org/downloads/
 
+Install any  python IDE such as Pycharm from : https://www.jetbrains.com/pycharm/download/#section=mac  or VS Code :https://code.visualstudio.com/Download
+
 To check your Python version, run:
 ```
 python --version
