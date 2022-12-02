@@ -96,7 +96,7 @@ For Student Login, please add below credentials:
   
  If New Student, please Register it in below page after clicking "New User/ Register" Button:
 
-![admin](https://user-images.githubusercontent.com/73725029/109415230-cd94f700-79b7-11eb-9869-e345a1e575cd.png)
+
 
 
 After successfull Library Login, the LMS system will display the below features:
