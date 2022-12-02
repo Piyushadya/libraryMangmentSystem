@@ -33,7 +33,8 @@ python -m pip install PyMySQL  or pip install pymysql
 Also, after successfully installing the Workbench, to create the instance, please provide below credentials:
 
  Username =
-  ```` root
+  ```` 
+  root
    ```` 
  Password = 
   ```` 
