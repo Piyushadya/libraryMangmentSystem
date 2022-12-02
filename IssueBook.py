@@ -114,8 +114,8 @@ def issueBook():
     inf1 = Entry(labelFrame)
     inf1.place(relx=0.3,rely=0.2, relwidth=0.62)
     
-    # Member id is added here
-    lb2 = Label(labelFrame,text="Member ID : ", bg='black', fg='white',font=('Courier', 15))
+    # Student id is added here
+    lb2 = Label(labelFrame,text="Student ID : ", bg='black', fg='white',font=('Courier', 15))
     lb2.place(relx=0.05,rely=0.4)
         
     inf2 = Entry(labelFrame)

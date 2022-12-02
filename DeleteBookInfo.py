@@ -13,26 +13,39 @@ cur = con.cursor()
 issueTable = "books_issued" 
 bookTable = "books" 
 
+allBid = [] #List To store all Book IDs
+
 # This function will delete specific book from "bookTable/issueTable" table
 def deleteBookInfo():
     
     # Fetch book id from specific table
     bid = bookInfo1.get()
-    
-    # Fetching details from specifc table and delete as per the book ID
-    deleteSql = "delete from "+bookTable+" where bid = '"+bid+"'"
-    deleteIssue = "delete from "+issueTable+" where bid = '"+bid+"'"
-    try:
-        cur.execute(deleteSql)
-        con.commit()
-        cur.execute(deleteIssue)
-        con.commit()
-        messagebox.showinfo('Success',"Book Record Deleted Successfully")
-    except:
-        messagebox.showinfo("Please check Book ID")
-    
 
-    print(bid)
+    extractBid = "select bid from " + bookTable
+    try:
+        cur.execute(extractBid)
+        con.commit()
+        for i in cur:
+            allBid.append(i[0])
+
+        if bid in allBid:
+            # Fetching details from specifc table and delete as per the book ID
+            deleteSql = "delete from " + bookTable + " where bid = '" + bid + "'"
+            deleteIssue = "delete from " + issueTable + " where bid = '" + bid + "'"
+            cur.execute(deleteSql)
+            con.commit()
+            cur.execute(deleteIssue)
+            con.commit()
+            messagebox.showinfo('Success', "Book Deleted Successfully")
+        else:
+            allBid.clear()
+            messagebox.showinfo('Message', "Please enter the correct book ID")
+            return
+    except:
+        messagebox.showinfo("Search Error", "The value entered is wrong, Try again")
+
+    allBid.clear()
+    root.destroy()
 
     bookInfo1.delete(0, END)
     root.destroy()

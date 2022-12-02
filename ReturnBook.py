@@ -43,9 +43,15 @@ def return_book():
                 status = True
             else:
                 status = False
-
+        
         else:
-            messagebox.showinfo("Error","Book ID not present")
+            checkAvail = "select status from "+bookTable+" where bid = '"+bid+"'"
+            cur.execute(checkAvail)
+            for i in cur:
+                check = i[0]
+                
+            if check == 'available':
+                messagebox.showinfo('Message',"Book already available")
     except:
         messagebox.showinfo("Error","Can't fetch Book IDs")
     
@@ -55,7 +61,7 @@ def return_book():
     print(bid in allBid)
     print(status)
     
-    # It will change the status to "Avaialble" after book is retured successfully
+    # It will change the status to "Available" after book is retured successfully
     updateStatus = "update "+bookTable+" set status = 'available' where bid = '"+bid+"'"
     try:
         if bid in allBid and status == True:

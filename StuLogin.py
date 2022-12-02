@@ -63,8 +63,8 @@ def login():
     labelFrame = Frame(root,bg='black')
     labelFrame.place(relx=0.1,rely=0.4,relwidth=0.8,relheight=0.4)
         
-    # Field to add member ID 
-    lb1 = Label(labelFrame,text="Member ID : ", bg='black', fg='white',font=('Courier', 15))
+    # Field to add Student ID 
+    lb1 = Label(labelFrame,text="Student ID : ", bg='black', fg='white',font=('Courier', 15))
     lb1.place(relx=0.05,rely=0.05, relheight=0.08)
   
     loginInfo1 = Entry(labelFrame)
@@ -98,7 +98,8 @@ def login():
          
     # If new user, User can register themself by clicking this Button
     registerBtn = Button(root,text="New User/ Register",bg='#d1ccc0', fg='black',command=addStudent,font=('Courier', 15))
-    registerBtn.place(relx=0.2,rely=0.9, relwidth=0.62, relheight=0.08)    
+    registerBtn.place(relx=0.2,rely=0.9, relwidth=0.62, relheight=0.08)
+
     
     root.mainloop()
 
