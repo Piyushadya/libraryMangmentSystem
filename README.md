@@ -28,7 +28,7 @@ python -m pip install PyMySQL  or pip install pymysql
 ````
 
 
-## 2. Please make sure to have MySQL Workbench installed : https://dev.mysql.com/downloads/workbench/
+# 2. Please make sure to have MySQL Workbench installed : https://dev.mysql.com/downloads/workbench/
 
 Also, after successfully installing the Workbench, to create the instance, please provide below credentials:
 
