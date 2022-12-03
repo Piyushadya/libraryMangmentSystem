@@ -53,7 +53,7 @@ Then follow below steps:
   2. Click on "Data import"
   3. Select Import from Self-Contained File radio button (right side of screen)
   4. Select the path of libraryManagement.sql from our project folder
-  5. select the database ("library") from "Default Target Schema:" dropbox
+  5. select the database ("library") from "Default Target Schema:" dropdown
   6. Click Start Import button at the right bottom corner of window
 
 NOTE: The Desktop Application has been deployed as an executable file. There are two separate executable files for Windows OS and Mac OS. Please find the links below.
